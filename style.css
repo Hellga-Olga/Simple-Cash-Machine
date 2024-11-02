@@ -1,0 +1,121 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#cash-machine {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#042b08, #6e8370, silver );
+    border-radius: 15px;
+}
+
+#screen {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr;
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    color: #015688;
+    background-color:azure;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 7px;
+}
+
+#upper-display {
+    border: none;
+    width: 100%;
+    background-color: azure;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#static-buttons {
+    padding: 15px;
+}
+
+.button-panel > button {
+    width: 140px;
+    height: 40px;
+    background-color: #b8cbba;
+    border-radius: 5px;
+    font-size: medium;
+}
+
+.button-panel > button:hover {
+    background-color: #cde0cf;
+}
+
+#pin-buttons > button:active, #numeric-buttons > button:active {
+    background-color: #fed3a4;
+    color: rgb(244, 69, 69);
+}
+
+#numeric-buttons, #pin-buttons {
+    display: none;
+}
+
+#start-button > button {
+    background: linear-gradient(-45deg, orange, #fac944 50%, #f9d90a 60%);
+    background-position-x: 100%;
+    background-size: 300%;
+    animation-name: red-shimmer;
+    animation-duration: 4s;
+    animation-iteration-count: 3;
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    border: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+}
+
+@keyframes red-shimmer {
+    to {background-position-x: 0%}
+} 
+
+.display-buttons {
+    display: none;
+}
+
+.display-buttons > button {
+    flex-direction: row;
+    background-color: rgb(255, 221, 0);
+    width: 100px;
+    height: 30px;
+    border-radius: 12px;
+    border: none;
+    margin: auto;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: medium;
+} 
+
+
+.button-panel {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+
+}
+
+#menu-buttons {
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+#continue-buttons {
+    display: none;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}

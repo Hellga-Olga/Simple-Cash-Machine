@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Machine</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="cash-machine">
+        <section id="screen">
+            <div id="message-display">
+                    <p id="message">Press start to begin</p>
+            </div>
+            <div id="upper">
+                <input id="upper-display" readonly>
+            </div>
+            <div id="lower-display">
+                <p id="lower-message"></p>
+            </div>
+            <div id="screen-buttons">
+                <div id="start-button">
+                     <button onclick="pinScreen()">Start</button>
+                </div>
+                <div class="display-buttons" id="continue-buttons">
+                    <button onclick="continueFunc()">Yes</button>
+                    <button onclick="exit()">No</button>
+                </div>
+                <div class="display-buttons" id="menu-buttons">
+                    <button onclick="checkBalance()" id="check-button">Check</button>
+                    <button onclick="addMoneyMenu()" id="deposit-menu">Deposit</button>
+                    <button onclick="withdrawMoneyMenu()" id="withdraw-menu">Withdraw</button>
+                </div>
+                <div class="display-buttons" id="deposit-button">
+                    <button onclick="addMoney()">Deposit</button>
+                </div>
+                <div class="display-buttons" id="withdraw-button">
+                    <button onclick="withdrawMoney()">Withdraw</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="static-buttons">
+            <div class="button-panel" id="pin-buttons">
+                <button onclick="addPin('1');">1</button>
+                <button onclick="addPin('2');">2</button>
+                <button onclick="addPin('3');">3</button>
+                <button onclick="addPin('4');">4</button>
+                <button onclick="addPin('5');">5</button>
+                <button onclick="addPin('6');">6</button>
+                <button onclick="addPin('7');">7</button>
+                <button onclick="addPin('8');">8</button>
+                <button onclick="addPin('9');">9</button>
+                <button onclick="pinCheck()">Enter</button>
+                <button onclick="addPin('0');">0</button>
+                <button onclick="delPin()">Clear/DEL</button>
+            </div>
+            <div class="button-panel" id="numeric-buttons">
+                <button onclick="addDigit('1');">1</button>
+                <button onclick="addDigit('2');">2</button>
+                <button onclick="addDigit('3');">3</button>
+                <button onclick="addDigit('4');">4</button>
+                <button onclick="addDigit('5');">5</button>
+                <button onclick="addDigit('6');">6</button>
+                <button onclick="addDigit('7');">7</button>
+                <button onclick="addDigit('8');">8</button>
+                <button onclick="addDigit('9');">9</button>
+                <button onclick="addMoney()" id="deposit-panel-button">Enter</button>
+                <button onclick="withdrawMoney()" id="withdraw-panel-button">Enter</button>
+                <button onclick="addDigit('0');">0</button>
+                <button onclick="delDigit()">Clear/DEL</button>
+            </div>
+            <div class="button-panel" id="blocked-buttons">
+                <button>1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button>7</button>
+                <button>8</button>
+                <button>9</button>
+                <button>Enter</button>
+                <button>0</button>
+                <button>Clear/DEL</button>
+            </div>    
+    </section>
+    </main>
+
+    <script src="CashMachine.js"></script>
+</body>
+</html>
