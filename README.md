@@ -29,7 +29,7 @@ After that, all you need to do is follow the prompts on the "Cash Machine" displ
 > To successfully run "Cash Machine" program, keep all files of this package in the same directory.
 
 
-### Command input requirements
+### Input requirements
 
 During **PIN validation**, enter digits exactly as prompted, otherwise an error will appear. For example:
 ```
