@@ -13,6 +13,7 @@ This simple web-based Cash Machine program performs mock balance operations at a
  The **initial balance** is £2000.
 
 ### How to run
+Download *CashMachine.js, index.html* and *style.css* files from this repository.
 Open the *index.html* file in your web browser by following these steps:
 ```
 1. right click on the "index.html" file;
@@ -38,9 +39,9 @@ It means that your PIN must be exactly 4 digits long, a longer or shorter PIN wo
 ```
 Error: your PIN is too long. 4 attempts left
 ```
-For **Deposit** and **Withdraw** operations, where numbers are required, the amount entering must be greater than £0, otherwise the following error will occur:
+For **Deposit** and **Withdraw** operations, where numbers are required, the amount entering must be greater than £0, otherwise the error will occur. For example:
 ```
-Error: the deposit amount is 0 £
+Error: the deposit amount is £0
 ```
 
 For **Deposit** operations, there is a maximum amount of deposit, which is £999999. In the case you enter a larger amount, you'll see the error on the display:
